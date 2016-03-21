@@ -1,0 +1,69 @@
+repo: "responsive-icon-cards"
+canvasCourse: "467502"
+canvasAssignment: "4178350"
+
+naming: true
+commits: 2
+
+html:
+  - path: "index.html"
+    valid: true
+    bestPractices: true
+    has:
+      - "ul"
+      - "ul li"
+      - "ul div"
+      - "ul img"
+      - "ul h2"
+      - "ul p"
+    search:
+      - 'placeholder-circle\.svg'
+      - 'Atlas moth'
+      - 'Hercules Moth'
+      - 'Hercules Moth'
+
+css:
+  - path: "css/main.css"
+    valid: true
+    bestPractices: true
+    has:
+      - ['html', 'box-sizing', 'border-box']
+      - ['html', 'text-size-adjust', '100%']
+      - ['html', '-moz-text-size-adjust', '100%']
+      - ['html', '-ms-text-size-adjust', '100%']
+      - ['html', '-webkit-text-size-adjust', '100%']
+      - ['*', 'box-sizing', 'inherit']
+      - ['.cards', 'list-style-type', 'none']
+      - ['.card']
+      - ['.card-img img']
+      - ['.card-body h2']
+      - ['.card-body p']
+    search:
+      - '@-moz-viewport'
+      - '@-ms-viewport'
+      - '@-o-viewport'
+      - '@-webkit-viewport'
+      - '@viewport'
+      - '@media only screen and \(min-width: 25em\) \{'
+      - '@media only screen and \(min-width: 38em\) \{'
+      - '@media only screen and \(min-width: 60em\) \{'
+      - '@media only screen and \(min-width: 90em\) \{'
+      - '100%'
+      - '110%'
+      - '120%'
+      - '130%'
+      - '1\.3'
+      - '1\.4'
+      - '1\.5'
+      - 'display: inline-block'
+      - 'display: block'
+    search_not:
+      - ['@media.+\(.*max-width', 'Media queries with `max-width` should not be used — use `min-width` instead']
+      - ['@media.+\(.*px', 'Pixel units should not be used in media queries — use `em` instead']
+      - ['font-size\s*:\s*.+px', 'Pixel units should not be used for `font-size` — use `rem` instead']
+      - ['line-height\s*:\s*.+(px|rem|em)', 'Line heights should not have units']
+      - ['float:', 'Use `display: inline-block` instead of float to complete this assignment']
+
+screenshots:
+  - path: "index.html"
+    sizes: [320, 400, 650, 980, 1400]
