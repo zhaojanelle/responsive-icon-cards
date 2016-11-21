@@ -25,7 +25,7 @@ ul {
 
 .cards {
   list-style-type: none;
-  margin-top: 0.75em;
+  margin-top: .75em;
 }
 
 .card {
@@ -34,11 +34,15 @@ ul {
 
 .card-img {
   text-align: center;
-  margin: 0.75em 0;
+  margin: .75em 0;
 }
 
 .card-img img {
   width: 50px;
+}
+
+.card-body {
+  margin: 1.5em 0;
 }
 
 .card-body h2 {
@@ -62,12 +66,13 @@ ul {
 
   .card-img {
     display: inline-block;
-    width: 18%;
+    width: 15%;
   }
 
   .card-body {
     display: inline-block;
     width: 78%;
+    margin: 0;
   }
 
 }
